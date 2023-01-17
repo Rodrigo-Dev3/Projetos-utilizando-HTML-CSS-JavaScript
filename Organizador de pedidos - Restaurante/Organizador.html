@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Organizador.css">
+    <title>Faça seu pedido</title>
+</head>
+<body>
+
+    <header class="menuTopo">
+        
+    <img class="logo" src="Imagens/Logo.png">
+
+        <nav class="menuNavegacao">
+            <a class="menu">Faça seu pedido</a>
+        </nav>
+        
+    </header>
+
+    <main class="conteudoPrincipal">
+        <section class="conteudoBox">
+            <div class="conteudoPedido">
+                <h1  class="tituloPedido">
+                    PEDIDO
+                </h1>
+
+                <div class="formulario">
+                    <form>
+                        <fieldset class="formularioItens">
+                            <div>
+                                <label for="comida">Comida: </label>
+                                <select id="comida" required>
+                                    <option selected disabled value="">Selecione</option>
+                                    <option>Arroz com frango assado #1</option>
+                                    <option>Massa alho e óleo #2</option>
+                                    <option>Feijoada #3</option>
+                                </select>
+
+                                <label for="bebida">Bebida: </label>
+                                <select id="bebida" required>
+                                    <option selected disabled value="">Selecione</option>
+                                    <option>Refrigerante #1</option>
+                                    <option>Água #2</option>
+                                    <option>Suco #3</option>
+                                </select>
+                            </div>
+                        </fieldset>
+
+                    </form>
+                </div>
+
+                <div>
+                    <button class="botao" type="submit">Pedido Concluído</button>
+                </div>
+                
+        </section>
+    </main>
+
+    <section class="info-pedidoGeral">
+        <div class="info-pedido">
+            <h1 class="tituloPedido">COMANDA</h1>
+            <strong>Comida:</strong> <div class="resultadoPedidoComida"></div>
+        
+            <strong>Bebida:</strong> <div class="resultadoPedidoBebida"></div>
+        </div>
+        </section>
+    
+    <section  class="tabelaGeral">
+        <div class="tabelaBox">
+            <table  class="tabela" border="1">
+                <caption class="tituloPedido"><h1>COZINHA</h1></caption>
+                <tr>
+                    <th class="coluna">Comida</th>
+                    <th class="coluna">Bebida</th>
+                </tr>
+            </table>
+        </div>
+        
+    </section>
+
+    <script src="Organizador.js"></script>
+</body>
+</html>
