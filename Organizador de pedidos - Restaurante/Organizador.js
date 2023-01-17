@@ -10,7 +10,7 @@ let resultadoPedidoB = document.querySelector('.resultadoPedidoBebida')
 botao.addEventListener('click', capturaComida)
 botao.addEventListener('click', capturaBebida)
 botao.addEventListener('click', adicionaPedido)
-'oi'
+
 
 function capturaComida(){
     resultadoPedidoC.textContent = comida.value
