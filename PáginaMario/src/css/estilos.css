@@ -1,0 +1,28 @@
+body{
+    font-family: 'Poppins';
+}
+
+.header{
+    background-color: rgb(213, 15, 207);
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .logo{
+    width: 65px;
+}
+
+.header .menu{
+    display: flex;
+    gap: 10px;
+
+    align-items: center;
+    /* Deve ter espaço para alinhar, por isso usa-se 100% da altura do elemento pai (header) deixando alinhado ao centro */
+    height: 100%;
+}
+
+.header nav li a{
+    font-weight: bold;
+    color: white;
+}
