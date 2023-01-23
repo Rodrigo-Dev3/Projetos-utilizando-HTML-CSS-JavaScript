@@ -1,0 +1,37 @@
+/* Opções para telas com / até no máximo 1200px de largura - para outras dimensões basta inserir cada especificação dentro das chaves */
+@media (max-width: 1200px){
+    body{
+        background-color: #f44336;
+    }
+
+    .background-video{
+        display: none;
+    }
+
+    /* Quando não tem espaço de largura, joga os elementos para baixo */
+    .container{
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        gap: 30px;
+    }
+
+    .container .mario{
+        max-width: 50%;
+    }
+
+    .container .informations{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .container .description{
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .container .button-trailer{
+        background-color: #263238;
+    }
+}
