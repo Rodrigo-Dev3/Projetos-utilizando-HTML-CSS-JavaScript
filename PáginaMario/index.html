@@ -10,13 +10,13 @@
     <link rel="shortcut icon" href="./src/imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/estilos.css">
-    <title>Document</title>
+    <title>Super Mario Bros</title>
 </head>
 <body>
     <div class="background-video">
-        <!-- <video class="video" autoplay loop muted>
+        <video class="video" autoplay loop muted>
             <source src="./src/vídeos/video-mario.mp4" type="video/mp4">
-        </video> -->
+        </video>
     </div>
     <header class="header">
         <a>
@@ -34,10 +34,18 @@
     <main class="container">
         <div class="informations">
             <img class="imagem-titulo" src="./src/imagens/titulo.png" alt="título do site">
-            <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint quisquam iste cum minus inventore corporis temporibus. Ducimus totam placeat libero consequuntur dicta ipsa accusantium facilis at atque possimus? Rerum, est!</p>
+            <p class="description">Aproveite e veja o novo trailer do seu jogo preferido, o Super Mario Bros! É só clicar no botão que você será direcionado para o local certo para assistir o vídeo!</p>
             <button class="button-trailer">Veja o trailer</button>
         </div>
         <img src="./src/imagens/super-mario-chars.png" alt="imagem do super mario bros">
+
+        <div class="modal">
+            <div class="content-modal">
+                <span class="close-modal"> X </span>
+                <!-- Adiciona um pop-up do trailer - No youtube, basta copiar o código da área 'Compartilhar' -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/wkn-Gb-Fhac" title="Trailer Oficial" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
     </main>
 </body>
 </html>
