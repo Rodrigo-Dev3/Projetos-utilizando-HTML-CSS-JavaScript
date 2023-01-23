@@ -3,10 +3,15 @@ body{
 }
 
 .header{
-    background-color: rgb(213, 15, 207);
+    background-color: rgb(64, 15, 213);
 
     display: flex;
     justify-content: space-between;
+    padding: 30px;
+
+    max-width: 1440px;
+    /* Sem margin no topo e no rodapé '0', mas com margin aotumática (dividindo entre esquerda e direita), centralizando o header da página */
+    margin: 0 auto;
 }
 
 .header .logo{
@@ -24,5 +29,63 @@ body{
 
 .header nav li a{
     font-weight: bold;
-    color: white;
+    color: #ffffff;
+    font-size: 25px;
+    /* Insere 10px no topo e no rodapé e 20px na esquerda e direita da página */
+    padding: 10px 20px;
+
+    border-radius: 50px;
+    /* Ajusta o tempo da animação do hover do elemento */
+    transition: 0.2s;
+}
+
+/* :hover adiciona uma pseudo-classe ao elemento 'a', ou seja, nesse caso acrescentará um hover quando passar o mouse por cima do elemento  */
+.header nav li a:hover{
+    background-color: #d5011d;
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+
+    display: flex;
+    /* Somente centraliza os elementos dentro do 'container' se existir altura suficiente nesse elemento */
+    align-items: center;
+    /* Insere a altura suficiente para que centralize o elemento, utilizando o '100vh' para 100% do tamanho da tela da pessoa usuária  */
+    /* Utiliza o 'calc()' para calcular e o tamanho total em pixels da tela e diminuir do tamanho em pixels do menu - ajusta a proporção correta */
+    height: calc(100vh - 132px);
+
+    padding: 0 30px 30px;
+}
+
+.container .imagem-titulo{
+    max-width: 500px;
+}
+
+.container .description{
+    color: #A8adb7;
+    width: 85%;
+    font-size: 18px;
+    margin: 30px 0;
+}
+
+.container .button-trailer{
+    background-color: #ff0021;
+    color: #ffffff;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    /* Quando o cursor parar em cima do botão, ele irá virar uma 'mãozinha'  */
+    cursor: pointer;
+    border: none;
+    border-radius: 5%;
+    text-transform: uppercase;
+    /* A última propriedade é o nome do efeito que se quer adicionar, nesse caso, 'ease-in-out' - all significa em 'todas as propriedades' */
+    /* Necessita a criação da animação para que seja ativada - no caso o ':hover' */
+    transition: 0.5s all ease-in-out;
+}
+
+.container .button-trailer:hover{
+    /* Animação de aumento de escala */
+    transform: scale(1.1);
 }
