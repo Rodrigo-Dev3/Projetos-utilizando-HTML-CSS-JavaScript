@@ -164,6 +164,7 @@ body{
 }
 
 /* O javascript irá tornar o elemento visível por meio desse CSS */
+/* Na classe modal eu estou criando outra classe com nome 'aberto' para que possa ser manipulada depois no javascript */
 .modal.aberto{
     opacity: 1;
     visibility: visible;
